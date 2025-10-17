@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/index2.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Website Saya</h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Halo, Saya Muhammad Dzikra Fardian</h2>
+        <p>Saya seorang teknologi informasi</p>
+        <a href="https://www.instagram.com/dzkr.fardian/" class="btn"
+          >instagram</a
+        >
+      </section>
+
+      <section class="content">
+        <h3>Tentang Saya</h3>
+        <p>
+          Saya Muhammad Dzikra Fardian, merupakan lulusan Sekolah Menengah
+          Kejuruan bidang teknologi infomasi angkatan 2022, terutama dalam
+          bahasa pemograman. Tidak hanya itu, saya juga memiliki skill dalam
+          dunia multimedi, komputer dan jaringan. Walaupun saya lulusan SMK,
+          saya memiliki pengalaman kerja yang cukup menjanjikan salahsatunya
+          menjadi staff IT di Rumah Sakit Lancang Kuning.
+        </p>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index2.html">Profil</a></li>
+        <li><a href="#">pengalaman</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </aside>
+
+    <script>
+      const links = document.querySelectorAll(".sidebar ul li a");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          links.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    </script>
+
+    <footer class="sticky-footer">
+      <p>&copy; 2025 Muhammad Dzikra. Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>

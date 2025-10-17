@@ -1,0 +1,192 @@
+/* 🔹 Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Gaya umum */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* 🔹 Header */
+header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Bagian Hero */
+.hero {
+  background: linear-gradient(to right, #004aad, #0078ff);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 70vh; /* tinggi proporsional */
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* 🔹 Tombol */
+.btn {
+  background-color: white;
+  color: #004aad;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dfe9ff;
+}
+
+/* 🔹 Konten utama */
+.content {
+  padding: 50px 25px;
+  text-align: center;
+  background-color: white;
+}
+
+.content h3 {
+  font-size: 1.6rem;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.content p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* 🔹 Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 100%;
+  background-color: #003080;
+  color: white;
+  padding-top: 80px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #005bff;
+}
+
+/* 🔹 Footer */
+.sticky-footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 50px;
+}
+
+/* 🔸 Responsif Tablet */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 60vh;
+    padding: 40px 15px;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+
+  .content {
+    padding: 40px 15px;
+  }
+}
+
+/* 🔸 Responsif HP */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .sidebar ul li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .sidebar ul li a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 30px 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .sticky-footer {
+    font-size: 0.9rem;
+  }
+}
